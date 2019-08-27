@@ -4,6 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'npm install'
+                sh 'node_modules/.bin/cordova platform add android'
                 sh 'npm run build:android'
             }
         }
