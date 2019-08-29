@@ -6,6 +6,7 @@ pipeline {
 //                 sh 'npm install'
 
 //                 sh 'echo $ANDROID_HOME'
+                    sh 'hostname'
                    sh 'ls /usr -a'
 
 
