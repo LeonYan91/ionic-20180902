@@ -4,9 +4,11 @@ pipeline {
         stage('build') {
             steps {
 //                 sh 'npm install'
-                sh 'ls -a'
+                sh 'hostname'
+                sh 'ls / -a'
                 sh 'echo ####### '
                 sh 'ls /root/ -a'
+
 //                 sh 'java -version'
 //                 sh 'node_modules/.bin/cordova platform add android'
 //                 sh 'echo $ANDROID_HOME'
