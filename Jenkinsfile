@@ -11,7 +11,7 @@ pipeline {
 
 
                 sh 'java -version'
-//                 sh 'node_modules/.bin/cordova platform add android'
+                sh 'node_modules/.bin/cordova build android'
 //                 sh 'echo $ANDROID_HOME'
 //                 sh 'npm run build:android'
             }
