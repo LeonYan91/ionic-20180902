@@ -9,6 +9,7 @@ pipeline {
                     sh 'hostname'
                     sh 'hostname -i'
 //                    sh 'ls /usr -a'
+                    sh 'gradle -v'
 
 
 //                 sh 'java -version'
