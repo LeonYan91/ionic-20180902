@@ -9,6 +9,9 @@ pipeline {
                     sh 'hostname'
                     sh 'hostname -i'
 //                    sh 'ls /usr -a'
+                    sh 'java -v'
+                    sh 'echo $GRADLE_HOME'
+
                     sh 'gradle -v'
 
 
