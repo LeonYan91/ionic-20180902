@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'node:10.16.3' } }
+    agent { any }
     stages {
         stage('build') {
             steps {
@@ -10,7 +10,7 @@ pipeline {
                    sh 'ls /usr -a'
 
 
-//                 sh 'java -version'
+                sh 'java -version'
 //                 sh 'node_modules/.bin/cordova platform add android'
 //                 sh 'echo $ANDROID_HOME'
 //                 sh 'npm run build:android'
