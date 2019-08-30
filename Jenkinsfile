@@ -8,6 +8,7 @@ pipeline {
 //                 sh 'echo $ANDROID_HOME'
                     sh 'hostname'
                     sh 'hostname -i'
+                    sh 'ls /opt/gradle-5.6.1 -a'
 //                    sh 'ls /usr -a'
                     sh 'java -version'
                     sh 'echo $GRADLE_HOME'
