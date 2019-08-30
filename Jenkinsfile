@@ -19,6 +19,7 @@ pipeline {
                 sh 'node_modules/.bin/cordova build android'
 //                 sh 'echo $ANDROID_HOME'
 //                 sh 'npm run build:android'
+                archiveArtifacts 'platforms/android/app/build/outputs/apk/debug/app-debug.apk'
             }
         }
 
