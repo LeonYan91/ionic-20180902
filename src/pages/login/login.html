@@ -8,7 +8,7 @@
 
 
 <ion-content>
-  <form (submit)="doLogin()">
+  <form>
     <ion-list>
 
       <ion-item>
@@ -30,8 +30,16 @@
         <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
       </ion-item>
 
+      <ion-item>
+        <ion-label fixed>URL</ion-label>
+        <ion-input type="text" [(ngModel)]="account.url" name="url"></ion-input>
+      </ion-item>
+
       <div padding>
         <button ion-button color="primary" block>{{ 'LOGIN_BUTTON' | translate }}</button>
+      </div>
+      <div padding>
+        <button (click)="openUrl()" ion-button color="primary" block>打开URL</button>
       </div>
 
     </ion-list>

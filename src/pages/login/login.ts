@@ -14,9 +14,10 @@ export class LoginPage {
   // The account fields for the login form.
   // If you're using the username field with or without email, make
   // sure to add it to the type
-  account: { email: string, password: string } = {
+  account: { email: string, password?: string, url?: string } = {
     email: 'test@example.com',
-    password: 'test'
+    password: 'test1',
+    // url: 'www.baidu.com'
   };
 
   // Our translated text strings
@@ -46,5 +47,9 @@ export class LoginPage {
       });
       toast.present();
     });
+  }
+
+  openUrl = () => {
+    window.open(this.account.url);
   }
 }
